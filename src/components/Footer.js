@@ -74,19 +74,19 @@ export const Footer = () => {
             <div className="col-3 text-white mb-4">
               <h4>Information</h4>
               <div className="footer-links d-flex flex-column">
-                <Link to="" className="text-white py-2 mb-1">
+                <Link to="/privacy-policy" className="text-white py-2 mb-1">
                   Privacy Policy
                 </Link>
-                <Link to="" className="text-white py-2 mb-1">
+                <Link to="/refund-policy" className="text-white py-2 mb-1">
                   Refund Policy
                 </Link>
-                <Link to="" className="text-white py-2 mb-1">
+                <Link to="/shipping-policy" className="text-white py-2 mb-1">
                   Shipping Policy
                 </Link>
-                <Link to="" className="text-white py-2 mb-1">
-                  Terms and Conditions
+                <Link to="/term-conditions" className="text-white py-2 mb-1">
+                  Terms & Conditions
                 </Link>
-                <Link to="" className="text-white py-2 mb-1">
+                <Link to="/blog" className="text-white py-2 mb-1">
                   Blogs
                 </Link>
               </div>
@@ -94,13 +94,13 @@ export const Footer = () => {
             <div className="text-white mb-4 col-3">
               <h4>Account</h4>
               <div className="footer-links d-flex flex-column">
-                <Link to="" className="text-white py-2 mb-1">
+                <Link to="/about" className="text-white py-2 mb-1">
                   About Us
                 </Link>
                 <Link to="" className="text-white py-2 mb-1">
                   Faq
                 </Link>
-                <Link to="" className="text-white py-2 mb-1">
+                <Link to="/contact" className="text-white py-2 mb-1">
                   Contact
                 </Link>
               </div>
