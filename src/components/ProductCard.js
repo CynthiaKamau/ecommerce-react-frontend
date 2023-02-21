@@ -1,6 +1,12 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
+import watch from "../images/watch.jpg";
+import watch2 from "../images/watch-1.avif";
+import addcart from "../images/add-cart.svg";
+import view from "../images/view.svg";
+import prodcompare from "../images/prodcompare.svg";
+import wish from "../images/wish.svg";
 
 const ProductCard = (props) => {
   const { grid } = props;
@@ -9,23 +15,28 @@ const ProductCard = (props) => {
   return (
     <>
       <div
-        className={`col-3 ${
-          location.pathname === "/store" ? `gr-${grid}` : "col-3"
-        }`}
+        className={` ${
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+        } `}
       >
-        <Link to="" className="product-card position-relative">
+        <Link
+          to={`${
+            location.pathname == "/"
+              ? "/product/:id"
+              : location.pathname == "/product/:id"
+              ? "/product/:id"
+              : ":id"
+          }`}
+          className="product-card position-relative"
+        >
           <div className="wishlist-icon position-absolute">
-            <Link to="">
-              <img src="images/wish.svg" alt="wishlist" />
-            </Link>
+            <button className="border-0 bg-transparent">
+              <img src={wish} alt="wishlist" />
+            </button>
           </div>
           <div className="product-image">
-            <img
-              src="images/watch.jpg"
-              className="img-fluid"
-              alt="productimage"
-            />
-            <img src="images/watch-1.avif" alt="productimage" />
+            <img src={watch} className="img-fluid" alt="product image" />
+            <img src={watch2} className="img-fluid" alt="product image" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -35,9 +46,9 @@ const ProductCard = (props) => {
             <ReactStars
               count={5}
               size={24}
-              activeColor="#ffd700"
-              value={3}
+              value={4}
               edit={false}
+              activeColor="#ffd700"
             />
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -49,37 +60,42 @@ const ProductCard = (props) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-              <Link to="">
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-              <Link to="">
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link to="">
-                <img src="images/prodcompare.svg" alt="compare" />
-              </Link>
+              <button className="border-0 bg-transparent">
+                <img src={prodcompare} alt="compare" />
+              </button>
+              <button className="border-0 bg-transparent">
+                <img src={view} alt="view" />
+              </button>
+              <button className="border-0 bg-transparent">
+                <img src={addcart} alt="addcart" />
+              </button>
             </div>
           </div>
         </Link>
       </div>
       <div
-        className={`col-3 ${
-          location.pathname === "/store" ? `gr-${grid}` : "col-3"
-        }`}
+        className={` ${
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+        } `}
       >
-        <Link to="" className="product-card position-relative">
+        <Link
+          to={`${
+            location.pathname == "/"
+              ? "/product/:id"
+              : location.pathname == "/product/:id"
+              ? "/product/:id"
+              : ":id"
+          }`}
+          className="product-card position-relative"
+        >
           <div className="wishlist-icon position-absolute">
-            <Link to="">
-              <img src="images/wish.svg" alt="wishlist" />
-            </Link>
+            <button className="border-0 bg-transparent">
+              <img src={wish} alt="wishlist" />
+            </button>
           </div>
           <div className="product-image">
-            <img
-              src="images/watch.jpg"
-              className="img-fluid"
-              alt="productimage"
-            />
-            <img src="images/watch-1.avif" alt="productimage" />
+            <img src={watch} className="img-fluid" alt="product image" />
+            <img src={watch2} className="img-fluid" alt="product image" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -89,9 +105,9 @@ const ProductCard = (props) => {
             <ReactStars
               count={5}
               size={24}
-              activeColor="#ffd700"
-              value={3}
+              value={4}
               edit={false}
+              activeColor="#ffd700"
             />
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -103,15 +119,15 @@ const ProductCard = (props) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-              <Link to="">
-                <img src="images/add-cart.svg" alt="addcart" />
-              </Link>
-              <Link to="">
-                <img src="images/view.svg" alt="view" />
-              </Link>
-              <Link to="">
-                <img src="images/prodcompare.svg" alt="compare" />
-              </Link>
+              <button className="border-0 bg-transparent">
+                <img src={prodcompare} alt="compare" />
+              </button>
+              <button className="border-0 bg-transparent">
+                <img src={view} alt="view" />
+              </button>
+              <button className="border-0 bg-transparent">
+                <img src={addcart} alt="addcart" />
+              </button>
             </div>
           </div>
         </Link>
