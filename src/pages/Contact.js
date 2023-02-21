@@ -14,6 +14,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12">
             <iframe
+              title="location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817780011236!2d36.82027331394712!3d-1.2831795990640869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d5d2a8bf2f%3A0x584569be8b3354cc!2sNation%20Centre%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1676919244034!5m2!1sen!2ske"
               width="600"
               height="450"
